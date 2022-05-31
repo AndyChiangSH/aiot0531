@@ -45,8 +45,16 @@ mydb = "<fill-in-Heroku-Postgredb-DB-db>"
 ```
 
 7. testing locally by running python app.py
-8. deploy to github
+9. deploy to github
 
 ```
 git push origin main
 ```
+
+9. Connect Heroku with github
+
+![](https://i.imgur.com/DnGsJrE.png)
+
+10. Finish
+
+https://aiot0531.herokuapp.com/
