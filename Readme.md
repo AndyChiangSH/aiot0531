@@ -4,26 +4,26 @@
 
 ## 步驟
 
-1. git clone
+### 1. git clone
 
 ```
 https://github.com/AndyChiangSH/aiot0531.git
 ```
 
-2. 安裝所需套件
+### 2. install package by `requirements.txt`
 
 ```
 pip install -r requirements.txt
 ```
 
-3. add an heroku postgredb
+### 3. add an heroku postgredb
 
 * register heroku account
 * go to dashboard
 * new an app
 * go to resource and add-on an Heroku postgredb
 
-4. login to heroku pstgredb using HeidiSQL
+### 4. login to heroku pstgredb using HeidiSQL
 
 到 Postgresql >> Settings >> Database Credentials 取得資料庫資訊
 
@@ -31,11 +31,11 @@ pip install -r requirements.txt
 
 ![](https://i.imgur.com/zlLuIs5.jpg)
 
-5. import postgredb (in `db/postgre.db`)
+### 5. import postgredb (in `db/postgre.db`)
 
 ![](https://i.imgur.com/u2fJ0qI.png)
 
-6. setting db in `app.py`
+### 6. setting db in `app.py`
 
 ```
 myserver = "<fill-in-Heroku-Postgredb-DB-sever>"
@@ -44,17 +44,18 @@ mypassword = "<fill-in-Heroku-Postgredb-DB-pwd>"
 mydb = "<fill-in-Heroku-Postgredb-DB-db>"
 ```
 
-7. testing locally by running python app.py
-9. deploy to github
+### 7. testing locally by running python app.py
+
+### 8. deploy to github
 
 ```
 git push origin main
 ```
 
-9. Connect Heroku with github
+### 9. Connect Heroku with github
 
 ![](https://i.imgur.com/DnGsJrE.png)
 
-10. Finish
+### 10. Finish
 
 https://aiot0531.herokuapp.com/
