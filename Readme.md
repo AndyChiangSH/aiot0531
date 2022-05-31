@@ -1,70 +1,52 @@
-# AIoT Github
+# aiot0531
 
-## Lecture 15: IoT Flask Web (deploy to heroku)
+物聯網 - hw05
 
-### step 1 : Clone this github
+## 步驟
 
-### step 2 : install some package
+1. git clone
 
-
-```python
-pip insall gunicorn   
-Flask==2.0.1 
-Jinja2==3.0.1 
-psycopg2 
-sklearn 
-pandas  
-numpy 
+```
+https://github.com/AndyChiangSH/aiot0531.git
 ```
 
-### step 3: add an heroku postgredb
+2. 安裝所需套件
+
+```
+pip install -r requirements.txt
+```
+
+3. add an heroku postgredb
 
 * register heroku account
 * go to dashboard
 * new an app
 * go to resource and add-on an Heroku postgredb
 
-### step 4: login to heroku pstgredb using HeidiSQL
+4. login to heroku pstgredb using HeidiSQL
 
+到 Postgresql >> Settings >> Database Credentials 取得資料庫資訊
 
-```sql
-myserver ="<fill-in-Heroku-Postgredb-DB-sever>"
-myuser="<fill-in-Heroku-Postgredb-DB-user>"
-mypassword="<fill-in-Heroku-Postgredb-DB-pwd>"
-mydb="<fill-in-Heroku-Postgredb-DB-db>"
+![](https://i.imgur.com/1mAEzBF.jpg)
 
-```
-### step 5: import postgredb (in db/postgre.db)
+![](https://i.imgur.com/zlLuIs5.jpg)
 
+5. import postgredb (in `db/postgre.db`)
 
-### step 6: setting db in app.py
+![](https://i.imgur.com/u2fJ0qI.png)
 
-
-```sql
-myserver ="<fill-in-Heroku-Postgredb-DB-sever>"
-myuser="<fill-in-Heroku-Postgredb-DB-user>"
-mypassword="<fill-in-Heroku-Postgredb-DB-pwd>"
-mydb="<fill-in-Heroku-Postgredb-DB-db>"
+6. setting db in `app.py`
 
 ```
-### step 7: testing locally by running python app.py
+myserver = "<fill-in-Heroku-Postgredb-DB-sever>"
+myuser = "<fill-in-Heroku-Postgredb-DB-user>"
+mypassword = "<fill-in-Heroku-Postgredb-DB-pwd>"
+mydb = "<fill-in-Heroku-Postgredb-DB-db>"
+```
 
-### step 8: deploy to github (new private github repositoy)
+7. testing locally by running python app.py
+8. deploy to github
 
-delete .git and git remote add origin master github.com/xxxxx
-
-
-### step 9: Heroku deploy from github
-
-### step 10: Complete
-
-Sample link 1:
-https://awinlab-aiot.herokuapp.com/
-
-Sample link 2: 
-https://aiot0529.herokuapp.com/
-
-
-
-
-
+```
+git push origin main
+```
